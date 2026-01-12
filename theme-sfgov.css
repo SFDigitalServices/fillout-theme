@@ -1,0 +1,236 @@
+/* 
+SF.gov Fillout theme
+*/
+
+/************************************ 
+Alerts/Banners 
+************************************/
+/* alert container */
+.fillout-field-alert .border-blue-400 {
+  border: 1px solid #0046c2;
+  border-radius: 0px;
+  background-color: #e5f1ff;
+  padding: 28px;
+}
+
+/* alert inner container */
+.fillout-field-alert .flex.items-center .flex-col {
+  flex-direction: row;
+}
+
+/* alert icon */
+.fillout-field-alert .text-blue-400 {
+  color: #0046c2;
+}
+
+/* alert icon placement */
+.fillout-field-alert .flex.items-center {
+  align-items: flex-start;
+}
+
+/* alert title */
+.fillout-field-alert .ql-editor strong {
+  color: #0046c2;
+  background-color: #e5f1ff;
+}
+
+/* alert text */
+.fillout-field-alert .ql-editor p {
+  color: #0b0c0c;
+  background-color: inherit;
+}
+
+/************************************
+Buttons
+************************************/
+
+.fillout-field-button div {
+  text-align: center;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* next/primary button */
+.fillout-field-button button {
+  height: 40px;
+  padding: 15px 16px;
+  border-radius: 4px;
+  border: 1px solid #1b519e;
+  background-color: #1b519e;
+  box-shadow: none;
+  color: #fcfcfc;
+}
+
+.fillout-field-button button:hover {
+  border-color: #001d4e;
+  background-color: #001d4e;
+}
+
+.fillout-field-button button:focus {
+  outline: 3px solid #2a60af;
+  box-shadow: none;
+}
+
+/* back/secondary button */
+.fillout-back-button button {
+  border-radius: 4px;
+  border: 1px solid #dfebfd;
+  background-color: #dfebfd;
+  color: #000925;
+}
+.fillout-back-button button:hover {
+  border: 1px solid #afccf7;
+  background-color: #afccf7;
+}
+
+/* button spacing */
+.fillout-field-button > .justify-start {
+  justify-content: space-between;
+}
+
+/************************************
+Checkboxes
+************************************/
+.fillout-field-checkbox button,
+.fillout-field-checkbox button > svg,
+.fillout-field-checkboxes button,
+.fillout-field-checkboxes button > svg {
+  height: 40px;
+  width: 40px;
+}
+
+.fillout-field-checkbox button[aria-checked="true"],
+.fillout-field-checkboxes button[aria-checked="true"] {
+  background-color: #386ebf;
+}
+
+.fillout-field-checkboxes fieldset {
+  gap: 16px;
+}
+
+/************************************
+Dropdown/select
+************************************/
+.react-select__indicator {
+  color: #0b0c0c;
+}
+
+/************************************
+Error messages
+************************************/
+.fillout-error-validation-message {
+  color: #ac0000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/************************************
+Navigation/progress bar
+************************************/
+nav .group .step-name {
+  color: #0b0c0c !important;
+}
+
+/************************************
+Multiple choice
+************************************/
+.fillout-field-multiple-choice span > span.rounded-full {
+  height: 40px;
+  width: 40px;
+}
+
+.fillout-field-multiple-choice span > span.rounded-full div {
+  height: 22px;
+  width: 22px;
+  color: #386ebf;
+}
+
+.fillout-field-multiple-choice [role="radiogroup"] {
+  gap: 16px;
+}
+
+/************************************
+Spacing
+************************************/
+#question-alignment-container.h-full {
+  height: fit-content;
+}
+
+#question-alignment-container & > :not(:last-child) {
+  --tw-space-y-reverse: 0;
+  margin-block-start: calc(
+    calc(var(--spacing) * 40) * var(--tw-space-y-reverse)
+  );
+  margin-block-end: calc(
+    calc(var(--spacing) * 40) * calc(1 - var(--tw-space-y-reverse))
+  );
+}
+
+/************************************
+Switch
+************************************/
+.fillout-field-switch .ant-switch:focus {
+  outline: 3px solid #2a60af;
+  outline-offset: 4px;
+  transition: none;
+}
+
+/************************************
+Text
+************************************/
+
+.fillout-field-text h1,
+.fillout-field-text h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  color: #0b0c0c;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 56px;
+}
+
+div,
+span,
+p {
+  font-family: "Roboto Flex", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.fillout-field-label p {
+  color: #0b0c0c;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.fillout-field-container input[type],
+.fillout-field-container input[placeholder],
+.fillout-field-container label[type],
+.fillout-field-container span[placeholder],
+.fillout-field-container textarea[placeholder],
+.fillout-field-multiple-choice [role="radio"] div,
+.fillout-field-checkboxes label div,
+.react-select__value-container .react-select__single-value {
+  color: #0b0c0c !important;
+}
+
+.fillout-caption,
+input::placeholder {
+  color: #535454;
+}
+
+a {
+  color: #2a60af;
+}
+
+.fillout-required-asterisk,
+p::after {
+  color: #ac0000;
+}
