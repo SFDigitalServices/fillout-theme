@@ -62,6 +62,10 @@ Buttons
   background-color: #1b519e;
   box-shadow: none;
   color: #fcfcfc;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .fillout-field-button button:hover {
@@ -181,6 +185,10 @@ Switch
 
 /************************************
 Text
+
+Note:
+Roboto Slab isn't available/is being buggy in custom Fillout CSS, so we
+made it the default text and targeted everything else to be Roboto Flex.
 ************************************/
 
 .fillout-field-text h1,
@@ -199,6 +207,9 @@ span,
 p {
   font-family: "Roboto Flex", sans-serif;
   font-style: normal;
+}
+
+.fillout-field-paragraph p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
