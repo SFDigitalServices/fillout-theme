@@ -306,3 +306,13 @@ a {
 p::after {
   color: #ac0000;
 }
+
+/* Submission review page */
+span.grow {
+  color: #0b0c0c !important;
+}
+
+span.grow.italic {
+  color: #6e7070 !important;
+  font-style: italic;
+}
