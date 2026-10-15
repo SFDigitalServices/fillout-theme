@@ -1,3 +1,13 @@
 {
-  "private": true
+  "name": "@sfgov/fillout",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsx extension/scripts/build.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.5",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15"
+  }
 }
