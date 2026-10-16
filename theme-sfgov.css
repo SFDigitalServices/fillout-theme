@@ -133,6 +133,13 @@ Error messages
 }
 
 /************************************
+File upload
+************************************/
+.fillout-field-file-upload div.filepond--drop-label > label > div {
+  color: #535454 !important;
+}
+
+/************************************
 Navigation/progress bar
 ************************************/
 nav .group .step-name {
