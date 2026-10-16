@@ -4,7 +4,7 @@
   "scripts": {
     "build": "run-s build:css build:extension",
     "build:extension": "tsx extension/scripts/build.ts",
-    "build:css": "postcss src/main.css -o dist/theme-sfgov.css",
+    "build:css": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
     "prepublish": "npm run build:css",
     "test": "jest",
     "watch:css": "nodemon -w src -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build:css'",
