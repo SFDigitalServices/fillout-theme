@@ -308,11 +308,11 @@ p::after {
 }
 
 /* Submission review page */
-span.grow {
+.fillout-field-review span.grow {
   color: #0b0c0c !important;
 }
 
-span.grow.italic {
+.fillout-field-review span.grow.italic {
   color: #6e7070 !important;
   font-style: italic;
 }
