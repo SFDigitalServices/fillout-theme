@@ -4,10 +4,11 @@
   "scripts": {
     "build": "run-s build:css build:extension",
     "build:extension": "tsx extension/scripts/build.ts",
-    "build:css": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
+    "build:css": "postcss src/main.css -o dist/theme-sfgov.css",
     "prepublish": "npm run build:css",
     "test": "jest",
-    "watch": "nodemon -w src -w extension/src -w exension/scripts --ext 'css,js*,ts*' --exec 'npm run build'"
+    "watch:css": "nodemon -w src -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build:css'",
+    "watch:extension": "nodemon -w extension -i extension/dist -w --ext 'css,js*,ts*,html' --exec 'npm run build:extension'"
   },
   "devDependencies": {
     "@types/chrome": "^0.3.5",
@@ -15,6 +16,7 @@
     "@types/postcss-import": "^14.0.3",
     "autoprefixer": "^10.5.4",
     "cssnano": "^8.0.2",
+    "esbuild": "^0.28.2",
     "nodemon": "^3.1.14",
     "postcss": "^8.5.23",
     "postcss-cli": "^12.0.0",
@@ -22,7 +24,7 @@
     "postcss-import": "^16.1.1",
     "postcss-load-config": "^6.0.1",
     "postcss-nested": "^7.0.2",
-    "esbuild": "^0.28.2",
+    "tailwindcss": "^3.4.19",
     "tsx": "^4.23.15"
   }
 }
