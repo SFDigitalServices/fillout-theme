@@ -30,8 +30,8 @@ Alerts/Banners
 
 /* alert title */
 .fillout-field-alert .ql-editor strong {
-  color: #0046c2;
-  background-color: #e5f1ff;
+  /*  color: #0046c2; */
+  /*  background-color: #e5f1ff; */
 }
 
 /* alert text */
@@ -142,19 +142,18 @@ nav .group .step-name {
 /************************************
 Multiple choice
 ************************************/
-.fillout-field-multiple-choice span > span.rounded-full {
-  height: 40px;
-  width: 40px;
+.fillout-field-multiple-choice [role="radio"] {
+  margin: 16px 16px 16px 12px;
+}
+.fillout-field-multiple-choice span.border-2 {
+  height: 40px !important;
+  width: 40px !important;
 }
 
-.fillout-field-multiple-choice span > span.rounded-full div {
-  height: 22px;
-  width: 22px;
-  color: #386ebf;
-}
-
-.fillout-field-multiple-choice [role="radiogroup"] {
-  gap: 16px;
+.fillout-field-multiple-choice span.transition-transform {
+  height: 22px !important;
+  width: 22px !important;
+  color: #386ebf !important;
 }
 
 /************************************
@@ -185,14 +184,9 @@ Switch
 
 /************************************
 Text
-
-Note:
-Roboto Slab isn't available/is being buggy in custom Fillout CSS, so we
-made it the default text and targeted everything else to be Roboto Flex.
 ************************************/
 
-.fillout-field-text h1,
-.fillout-field-text h2 {
+.fillout-field-text h1 {
   font-family: "Roboto Slab", sans-serif;
   font-style: normal;
   color: #0b0c0c;
@@ -202,16 +196,83 @@ made it the default text and targeted everything else to be Roboto Flex.
   line-height: 56px;
 }
 
+.fillout-field-text h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  color: #0b0c0c;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.fillout-field-text h3 {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  color: #0b0c0c;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.fillout-field-text h4 {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  color: #0b0c0c;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.fillout-field-text h5 {
+  font-family: "Roboto Slab", sans-serif;
+  font-style: normal;
+  color: #0b0c0c;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
 div,
 span,
 p {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
 }
 
-.fillout-field-paragraph p {
+.fillout-field-paragraph h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.fillout-field-paragraph h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.fillout-field-paragraph h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.fillout-field-paragraph h4 {
+  font-weight: 700;
   font-size: 16px;
+  line-height: 24px;
+  /*  text-transform: uppercase; */
+}
+
+.fillout-field-paragraph h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.fillout-field-paragraph p {
   font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
 }
 
