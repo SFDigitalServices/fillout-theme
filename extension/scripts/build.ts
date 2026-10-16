@@ -9,7 +9,7 @@ const EXTENSION_DIR = join(__dirname, '..')
 const FILLOUT_DIR = join(EXTENSION_DIR, '..')
 const REPO_DIR = join(FILLOUT_DIR, '..')
 const DIST_DIR = join(EXTENSION_DIR, 'dist')
-const CSS_FILE = join(FILLOUT_DIR, 'theme-sfgov.css')
+const CSS_FILE = join(FILLOUT_DIR, 'dist', 'theme-sfgov.css')
 const REPO = 'SFDigitalServices/forms'
 
 const ENTRY_POINTS = [
@@ -17,7 +17,7 @@ const ENTRY_POINTS = [
   'content-main',
   'content-isolated',
   'options',
-]
+].map(name => join(EXTENSION_DIR, 'src', `${name}.ts`))
 
 main().catch((error: unknown) => {
   console.error(error)
@@ -34,7 +34,7 @@ async function main() {
   await mkdir(DIST_DIR, { recursive: true })
 
   await build({
-    entryPoints: ENTRY_POINTS.map(name => join(EXTENSION_DIR, 'src', `${name}.ts`)),
+    entryPoints: ENTRY_POINTS,
     outdir: DIST_DIR,
     bundle: true,
     format: 'iife',
@@ -50,6 +50,7 @@ async function main() {
   const manifest = JSON.parse(
     await readFile(join(EXTENSION_DIR, 'manifest.template.json'), 'utf8'),
   ) as Record<string, unknown>
+
   await writeFile(
     join(DIST_DIR, 'manifest.json'),
     JSON.stringify({
