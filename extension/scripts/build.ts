@@ -9,7 +9,8 @@ const EXTENSION_DIR = join(__dirname, '..')
 const FILLOUT_DIR = join(EXTENSION_DIR, '..')
 const REPO_DIR = join(FILLOUT_DIR, '..')
 const DIST_DIR = join(EXTENSION_DIR, 'dist')
-const CSS_FILE = join(FILLOUT_DIR, 'dist', 'theme-sfgov.css')
+const SOURCE_FILE = join(FILLOUT_DIR, 'theme', 'sfgov.css')
+const DIST_FILE = join(FILLOUT_DIR, 'dist', 'theme-sfgov.css')
 const REPO = 'SFDigitalServices/forms'
 
 const ENTRY_POINTS = [
@@ -43,7 +44,7 @@ async function main() {
   })
 
   await copyFile(join(EXTENSION_DIR, 'src/options.html'), join(DIST_DIR, 'options.html'))
-  await copyFile(CSS_FILE, join(DIST_DIR, 'theme-sfgov.css'))
+  await copyFile(DIST_FILE, join(DIST_DIR, 'theme-sfgov.css'))
   await cp(join(EXTENSION_DIR, 'icons'), join(DIST_DIR, 'icons'), { recursive: true })
   await writeFile(join(DIST_DIR, 'build-info.json'), JSON.stringify(info, null, 2))
 
@@ -64,7 +65,7 @@ async function main() {
 }
 
 function getBuildInfo(version: string): BuildInfo {
-  const cssPath = relative(REPO_DIR, CSS_FILE)
+  const cssPath = relative(REPO_DIR, SOURCE_FILE)
   const sha = git('log', '-1', '--format=%H', '--', cssPath)
     || process.env.GITHUB_SHA
     || git('rev-parse', 'HEAD')
