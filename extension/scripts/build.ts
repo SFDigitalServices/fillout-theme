@@ -1,7 +1,7 @@
 #!/usr/bin/env -S npx tsx
 import { build } from 'esbuild'
 import { execFileSync } from 'node:child_process'
-import { copyFile, cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { copyFile, cp, mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import { join, relative } from 'node:path'
 import type { BuildInfo } from '../src/shared/build-info'
 
@@ -26,6 +26,17 @@ main().catch((error: unknown) => {
 })
 
 async function main() {
+  try {
+    await stat(DIST_FILE)
+  }
+  catch {
+    const relativeCssPath = relative(FILLOUT_DIR, DIST_FILE)
+    console.error(
+      `❌ ${relativeCssPath} does not exist. Run \`npm run build:css\` to create it.`
+    )
+    process.exit(1)
+  }
+
   const pkg = JSON.parse(
     await readFile(join(FILLOUT_DIR, 'package.json'), 'utf8'),
   ) as { version: string }
