@@ -1,10 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/unbound-method
 const { join } = require('path')
-const nest = require('postcss-nested')
+const atImport = require('postcss-import')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
 const header = require('postcss-header')
-const atImport = require('postcss-import')
+const nest = require('postcss-nested')
 const tailwind = require('tailwindcss')
 const { name, version } = require('./package.json')
 
@@ -29,7 +29,7 @@ const plugins = [
   // postcss-import only resolves @import at the top of a file, so run it first
   atImport({
     path: [
-      join(__dirname, 'src'),
+      join(__dirname, 'theme'),
       join(__dirname, 'node_modules'),
     ],
   }),
