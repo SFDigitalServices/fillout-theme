@@ -29,9 +29,8 @@ const plugins = [
   // postcss-import only resolves @import at the top of a file, so run it first
   atImport({
     path: [
-      join(__dirname, 'theme'),
-      join(__dirname, 'node_modules'),
-    ],
+      join(__dirname, 'theme')
+    ]
   }),
   header({
     header: [
