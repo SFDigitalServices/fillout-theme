@@ -5,9 +5,10 @@
     "build": "run-s build:css build:extension",
     "build:extension": "tsx extension/scripts/build.ts",
     "build:css": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
+    "bundle:extension": "cd extension/dist && zip -r ./* ../fillout-css.zip && unzip -l ../fillout-css.zip",
     "prepublish": "NODE_ENV=production npm run build:css",
     "test": "jest",
-    "watch:css": "nodemon -w src -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build:css'",
+    "watch:css": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build:css'",
     "watch:extension": "nodemon -w extension -i extension/dist -w --ext 'css,js*,ts*,html' --exec 'npm run build:extension'"
   },
   "devDependencies": {
