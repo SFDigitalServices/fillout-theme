@@ -170,9 +170,6 @@ Spacing
   height: fit-content;
 }
 
-#question-alignment-container {
-  @apply space-y-[40px];
-}
 
 /************************************
 Switch
