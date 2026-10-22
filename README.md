@@ -4,7 +4,7 @@ This repo contains code and documentation for managing our [Fillout theme].
 
 ## Build
 
-The stylesheets in the [theme directory](./theme/) is built for production with
+The stylesheet in the [theme directory](./theme/) is built for production with
 [postcss] and [Tailwind][] (the same tools used to build SF.gov's stylesheets
 and React components). This helps us write less CSS (e.g. with nested selectors)
 and more precisely override Fillout's own CSS, which is also built with
@@ -31,20 +31,19 @@ files and just want to see Fillout forms with this _version_ of the CSS, select
 "URL" and paste this URL into the text field:
 
 ```url
-https://unpkg.com/@sfgov/fillout@latest/dist/theme-sfgov.css
+https://unpkg.com/@sfgov/fillout@<version>/dist/theme-sfgov.css
 ```
 
-Note that you can specify any version of the package by replacing `latest` with
-it. For instance, to see version `0.0.6` of the CSS, you would paste:
+...where `<version>` is a published version identifier or npm tag. For instance,
+to see version `0.0.6` of the CSS, you would paste:
 
 ```url
 https://unpkg.com/@sfgov/fillout@0.0.6/dist/theme-sfgov.css
 ```
 
-Then, navigate to any Fillout form and toggle the "CSS" button in the top right
-of the tab or frame so that it turns green and says "CSS: custom". From this
-point on, every Fillout form will have its custom CSS replaced by the stylesheet
-at that URL.
+Then, navigate to any Fillout form and toggle the "CSS" overlay in the tab or
+frame so that it turns green and says "CSS: custom". From this point on, every
+Fillout form will have its custom CSS replaced by the stylesheet at that URL.
 
 If you change the URL in the extension options, the styles will update
 automatically. Click the "CSS: custom" toggle at any time to switch back to the
@@ -60,11 +59,14 @@ with:
 realpath dist/theme-sfgov.css
 ```
 
-Then, navigate to any Fillout form and toggle the "CSS" button in the top right
-of the tab or frame so that it turns green and says "CSS: custom". From that
-point on, the form styles should update automatically whenever you rebuild the
-CSS. This pairs nicely with watch mode, which will rebuild whenever source or
-config files change:
+Make sure to also check the "Live reload" checkbox so that changes to the file
+will be applied automatically.
+
+Next, navigate to any Fillout form and toggle the "CSS" overlay in the tab or
+frame so that it turns green and says "CSS: custom". From that point on, the
+form styles should update automatically whenever you rebuild the CSS. This pairs
+nicely with watch mode, which will rebuild whenever source or config files
+change:
 
 ```sh
 npm run watch
