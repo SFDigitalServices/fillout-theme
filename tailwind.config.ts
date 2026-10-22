@@ -1,5 +1,8 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  content: ['src/**/*.css'],
+  /**
+   * There is no markup to target! @apply rules will inline the CSS as needed.
+   */
+  content: [],
 } satisfies Config
