@@ -13,6 +13,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@auto-it/all-contributors": "^11.3.6",
     "@auto-it/conventional-commits": "^11.3.6",
