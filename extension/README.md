@@ -14,13 +14,13 @@ npm run build -w @sfgov/fillout
 
 Then open `chrome://extensions`, enable **Developer mode**, click **Load unpacked**,
 and select `fillout/extension/dist`. Rebuild and click reload on the extension to
-pick up changes to the bundled CSS (`fillout/theme-sfgov.css`) or the code.
+pick up changes to the bundled CSS (`fillout/theme/sfgov.css`) or the code.
 
 ## CSS source
 
 Open the extension's **Options** to choose the **CSS source**:
 
-- **Bundled CSS**: the `theme-sfgov.css` copied into the extension at build time.
+- **Bundled CSS**: the theme CSS is copied into the extension at build time.
   The label links to the commit that last changed it. This is the default.
 - **Local CSS**: an absolute path to a CSS file. Chrome only lets extensions read
   local files if you turn on **Allow access to file URLs** for this extension on

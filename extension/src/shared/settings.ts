@@ -29,7 +29,7 @@ export function toFileUrl(path: string): string {
   const trimmed = path.trim()
   const windows = /^[A-Za-z]:[\\/]/.test(trimmed)
   if (!windows && !trimmed.startsWith('/')) {
-    throw new Error('Local CSS path must be absolute (e.g. /Users/you/forms/fillout/theme-sfgov.css)')
+    throw new Error('Local CSS path must be absolute (e.g. /Users/you/forms/fillout/dist/theme-sfgov.css)')
   }
   const segments = trimmed.replace(/\\/g, '/').split('/')
   return `file://${windows ? '/' : ''}${segments.map((segment, i) =>
