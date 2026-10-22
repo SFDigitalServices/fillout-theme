@@ -14,7 +14,8 @@ jobs:
         with:
           node-version-file: .tool-versions
           cache: npm
-      - run: npm ci
+
+      - run: npm ci --ignore-scripts
       - run: npm run lint
 
       - name: build
