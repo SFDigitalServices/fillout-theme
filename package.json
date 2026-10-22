@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
+    "lint": "eslint",
     "prepublishOnly": "NODE_ENV=production npm run build && publint",
     "watch": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build'"
   },
@@ -12,10 +13,17 @@
     "dist"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "@types/node": "^24.10.0",
     "@types/postcss-header": "^2.0.4",
     "@types/postcss-import": "^14.0.3",
     "autoprefixer": "^10.5.4",
     "cssnano": "^8.0.2",
+    "eslint": "^10.13.0",
+    "globals": "^16.5.0",
+    "jiti": "^2.7.0",
+    "knip": "^6.38.0",
     "nodemon": "^3.1.14",
     "postcss": "^8.5.23",
     "postcss-cli": "^12.0.0",
@@ -24,6 +32,8 @@
     "postcss-load-config": "^6.0.1",
     "postcss-nested": "^7.0.2",
     "publint": "^0.3.25",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
   }
 }
