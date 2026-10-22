@@ -13,12 +13,12 @@ Tailwind.
 To build the CSS for production, run:
 
 ```sh
-npm run build:css
+npm run build
 ```
 
 This creates `dist/theme-sfgov.css`. Set `NODE_ENV=production` to enable
-minification. (This is done automatically when the build is triggered via `npm
-publish`.)
+minification. (This is done automatically in the `prepublishOnly` script,
+which is run by `npm publish`.)
 
 ### Deploy
 
