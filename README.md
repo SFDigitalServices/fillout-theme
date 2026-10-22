@@ -92,7 +92,7 @@ in Fillout's [advanced designer].
     ```
 
 1. Paste the CSS into the modal CSS editor
-1. Click <kdb>Apply CSS</kbd> to save the styles
+1. Click <kbd>Apply CSS</kbd> to save the styles
 1. Click the <kbd>Publish</kbd> button in the top right to publish the form
    _and_ the theme.
 
