@@ -2,22 +2,15 @@
   "name": "@sfgov/fillout",
   "version": "0.1.0",
   "scripts": {
-    "build": "run-s build:css build:extension",
-    "build:extension": "tsx extension/scripts/build.ts",
-    "build:css": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
-    "bundle:extension": "cd extension/dist && zip -r chrome-fillout-css.zip *",
-    "prepublish": "NODE_ENV=production npm run build:css",
-    "test": "jest",
-    "watch:css": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build:css'",
-    "watch:extension": "nodemon -w extension -i extension/dist -w --ext 'css,js*,ts*,html' --exec 'npm run build:extension'"
+    "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
+    "prepublish": "NODE_ENV=production npm run build",
+    "watch": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build'"
   },
   "devDependencies": {
-    "@types/chrome": "^0.3.5",
     "@types/postcss-header": "^2.0.4",
     "@types/postcss-import": "^14.0.3",
     "autoprefixer": "^10.5.4",
     "cssnano": "^8.0.2",
-    "esbuild": "^0.28.2",
     "nodemon": "^3.1.14",
     "postcss": "^8.5.23",
     "postcss-cli": "^12.0.0",
