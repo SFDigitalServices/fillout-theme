@@ -24,7 +24,6 @@
     "postcss-load-config": "^6.0.1",
     "postcss-nested": "^7.0.2",
     "publint": "^0.3.25",
-    "tailwindcss": "^3.4.19",
-    "tsx": "^4.23.15"
+    "tailwindcss": "^3.4.19"
   }
 }
