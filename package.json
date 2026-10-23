@@ -13,6 +13,9 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "url": "https://github.com/SFDigitalServices/fillout-theme"
+  },
   "publishConfig": {
     "access": "public"
   },
