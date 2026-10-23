@@ -12,5 +12,8 @@ export default {
     ['conventional-commits', {
       // TODO
     } satisfies ConventionalCommitsOptions]
-  ]
+  ],
+  comment: {
+    edit: true
+  }
 } satisfies AutoRc
