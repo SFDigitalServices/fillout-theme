@@ -139,6 +139,13 @@ Checkboxes
 /************************************
 Dropdown/select
 ************************************/
+div.react-select__value-container,
+div.react-select__input-container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
+}
+
 .react-select__indicator {
   color: #0b0c0c;
 }
@@ -158,6 +165,23 @@ File upload
 ************************************/
 .fillout-field-file-upload div.filepond--drop-label > label > div {
   color: #535454 !important;
+}
+
+/************************************
+Text input fields
+************************************/
+/* Excludes language menu */
+[class*="fillout-field-"]:not(.fillout-field-container) input {
+  height: 56px;
+}
+
+textarea {
+  height: 102px;
+}
+
+input.border-gray-300,
+textarea.border-gray-300 {
+  border: 1px solid #0b0c0c;
 }
 
 /************************************
