@@ -34,3 +34,4 @@ jobs:
       - run: npx auto shipit
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_CONFIG_LOGLEVEL: verbose # temporary: surfaces npm's OIDC exchange errors
