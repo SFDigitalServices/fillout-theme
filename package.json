@@ -4,7 +4,7 @@
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
     "lint": "eslint",
-    "prepublishOnly": "NODE_ENV=production npm run build && publint",
+    "prepublishOnly": "NODE_ENV=production npm run build",
     "watch": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build'"
   },
   "license": "MIT",
@@ -13,12 +13,20 @@
   "files": [
     "dist"
   ],
+  "repository": "SFDigitalServices/fillout-theme",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
+    "@auto-it/conventional-commits": "^11.3.6",
+    "@auto-it/npm": "^11.3.6",
+    "@auto-it/omit-commits": "^11.3.6",
     "@eslint/js": "^9.39.1",
     "@stylistic/eslint-plugin": "^5.5.0",
     "@types/node": "^24.10.0",
     "@types/postcss-header": "^2.0.4",
     "@types/postcss-import": "^14.0.3",
+    "auto": "^11.3.6",
     "autoprefixer": "^10.5.4",
     "cssnano": "^8.0.2",
     "eslint": "^10.13.0",
