@@ -4,7 +4,6 @@
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
     "lint": "eslint",
-    "prepublishOnly": "NODE_ENV=production npm run build && publint",
     "watch": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build'"
   },
   "license": "MIT",
