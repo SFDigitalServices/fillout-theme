@@ -9,6 +9,10 @@ on:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # auto shipit: tags, releases
+      pull-requests: write # auto shipit: PR comments for canary
+      id-token: write # npm trusted publishing
     steps:
       - uses: actions/checkout@v4
         with:
