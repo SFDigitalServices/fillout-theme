@@ -10,17 +10,25 @@ export default {
       // this is required for trusted publishing (OIDC)
       setRcToken: false
     } satisfies INpmConfig],
+
     // use commit messages to determine the next version
     ['conventional-commits', {
       // defaultReleaseType: undefined
     } satisfies ConventionalCommitsOptions],
+
     ['omit-commits', {
       // don't include these commit prefixes in the changelog
       subject: [
         'chore',
         'spike'
       ],
-    } satisfies IOmitCommitsPluginOptions]
+    } satisfies IOmitCommitsPluginOptions],
+
+    // generate a link to the stylesheet for canary releases
+    [
+      './lib/auto-canary-url.js',
+      {}
+    ]
   ],
   comment: {
     edit: true
