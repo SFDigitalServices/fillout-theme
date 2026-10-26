@@ -90,8 +90,10 @@ Buttons
   border: 1px solid #afccf7;
   background-color: #afccf7;
 }
-.fillout-back-button button span div div::before {
-  content: "← ";
+@media (max-width: 768px) {
+  .fillout-back-button button span div div::before {
+    content: "← ";
+  }
 }
 
 /* button spacing */
