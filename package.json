@@ -1,6 +1,10 @@
 {
   "name": "@sfgov/fillout",
   "version": "0.1.0",
+  "author": {
+    "name": "San Francisco Digital Services",
+    "email": "noreply@sf.gov"
+  },
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
     "lint": "eslint",
