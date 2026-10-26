@@ -30,7 +30,8 @@ export default {
       {}
     ]
   ],
-  comment: {
-    edit: true
+  canary: {
+    // disable auto's canary comment in favor of our plugin
+    message: 'false'
   }
 } satisfies AutoRc
