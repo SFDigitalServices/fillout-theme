@@ -84,15 +84,36 @@ Buttons
   border: 1px solid #dfebfd;
   background-color: #dfebfd;
   color: #000925;
+  white-space: nowrap;
 }
 .fillout-back-button button:hover {
   border: 1px solid #afccf7;
   background-color: #afccf7;
 }
+@media (max-width: 768px) {
+  .fillout-back-button button span div div::before {
+    content: "← ";
+  }
+}
 
 /* button spacing */
-.fillout-field-button > .justify-start {
-  justify-content: space-between;
+@media screen and (min-width: 600px) {
+  /* back/submit button container */
+  div.fillout-field-button > div.flex {
+    justify-content: space-between !important;
+    flex-direction: row !important;
+  }
+
+  /* submit button */
+  div.fillout-field-button > div.flex > div:nth-child(2) {
+    justify-content: flex-end !important;
+    width: fit-content !important;
+  }
+
+  div.fillout-back-button {
+    justify-content: flex-start !important;
+    margin: 0;
+  }
 }
 
 /************************************
