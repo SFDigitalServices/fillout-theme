@@ -2,8 +2,8 @@
   "name": "@sfgov/fillout",
   "version": "0.2.1",
   "author": {
-    "name": "San Francisco Digital Services",
-    "email": "noreply@sf.gov"
+    "name": "sfds-bot",
+    "url": "https://github.com/sfds-bot"
   },
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
