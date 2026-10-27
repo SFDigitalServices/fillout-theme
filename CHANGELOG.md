@@ -1,3 +1,16 @@
+# v0.2.1 (Tue Oct 27 2026)
+
+#### 🐛 Bug Fix
+
+- [FPSD-356, FPSD-410] Fillout button styling fixes [#6](https://github.com/SFDigitalServices/fillout-theme/pull/6) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov) [@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 2
+
+- Jackie ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v0.2.0 (Mon Oct 26 2026)
 
 #### 🚀 Enhancement
