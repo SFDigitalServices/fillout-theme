@@ -5,73 +5,75 @@ SF.gov Fillout theme
 /************************************ 
 Alerts/Banners 
 ************************************/
-/* Info alert container */
-.fillout-field-alert .border-blue-400 {
-  border: 1px solid #0046c2;
-  border-radius: 0px;
-  background-color: #e5f1ff;
-  padding: 28px;
-}
-/* Info alert icon */
-.fillout-field-alert .text-blue-400 {
-  color: #0046c2;
-}
+.fillout-field-alert {
+  /* Info alert container */
+  .border-blue-400 {
+    border: 1px solid #0046c2;
+    border-radius: 0px;
+    background-color: #e5f1ff;
+    padding: 28px;
+  }
+  /* Info alert icon */
+  .text-blue-400 {
+    color: #0046c2;
+  }
 
-/* Warning alert container */
-.fillout-field-alert .border-yellow-400 {
-  border: 1px solid #843f00;
-  border-radius: 0px;
-  background-color: #faefe1;
-  padding: 28px;
-}
-/* Warning alert icon */
-.fillout-field-alert .text-yellow-400 {
-  color: #843f00;
-}
+  /* Warning alert container */
+  .border-yellow-400 {
+    border: 1px solid #843f00;
+    border-radius: 0px;
+    background-color: #faefe1;
+    padding: 28px;
+  }
+  /* Warning alert icon */
+  .text-yellow-400 {
+    color: #843f00;
+  }
 
-/* Critical alert container */
-.fillout-field-alert .border-red-400 {
-  border: 1px solid #ac0000;
-  border-radius: 0px;
-  background-color: #ffeae5;
-  padding: 28px;
-}
-/* Critical alert icon */
-.fillout-field-alert .text-red-400 {
-  color: #ac0000;
-}
+  /* Critical alert container */
+  .border-red-400 {
+    border: 1px solid #ac0000;
+    border-radius: 0px;
+    background-color: #ffeae5;
+    padding: 28px;
+  }
+  /* Critical alert icon */
+  .text-red-400 {
+    color: #ac0000;
+  }
 
-/* Success alert container */
-.fillout-field-alert .border-green-400 {
-  border: 1px solid #026800;
-  border-radius: 0px;
-  background-color: #e8f5e2;
-  padding: 28px;
-}
-/* Success alert icon */
-.fillout-field-alert .text-green-400 {
-  color: #026800;
-}
+  /* Success alert container */
+  .border-green-400 {
+    border: 1px solid #026800;
+    border-radius: 0px;
+    background-color: #e8f5e2;
+    padding: 28px;
+  }
+  /* Success alert icon */
+  .text-green-400 {
+    color: #026800;
+  }
 
-/* alert inner container */
-.fillout-field-alert .flex.items-center .flex-col {
-  flex-direction: row;
-}
+  /* alert inner container */
+  .flex.items-center .flex-col {
+    flex-direction: row;
+  }
 
-/* alert icon placement */
-.fillout-field-alert .flex.items-center {
-  align-items: flex-start;
-}
+  /* alert icon placement */
+  .flex.items-center {
+    align-items: flex-start;
+  }
 
-.fillout-field-alert .border-red-400 div.ql-editor p,
-.fillout-field-alert .border-blue-400 div.ql-editor p,
-.fillout-field-alert .border-yellow-400 div.ql-editor p,
-.fillout-field-alert .border-green-400 div.ql-editor p,
-.fillout-field-alert .border-red-400 div.ql-editor li,
-.fillout-field-alert .border-blue-400 div.ql-editor li,
-.fillout-field-alert .border-green-400 div.ql-editor li,
-.fillout-field-alert .border-yellow-400 div.ql-editor li {
-  color: #0b0c0c !important;
+  .border-red-400 div.ql-editor p,
+  .border-blue-400 div.ql-editor p,
+  .border-yellow-400 div.ql-editor p,
+  .border-green-400 div.ql-editor p,
+  .border-red-400 div.ql-editor li,
+  .border-blue-400 div.ql-editor li,
+  .border-green-400 div.ql-editor li,
+  .border-yellow-400 div.ql-editor li {
+    color: #0b0c0c !important;
+  }
 }
 
 /************************************
