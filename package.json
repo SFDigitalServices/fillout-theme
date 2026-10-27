@@ -1,6 +1,10 @@
 {
   "name": "@sfgov/fillout",
-  "version": "0.1.0",
+  "version": "0.2.1",
+  "author": {
+    "name": "San Francisco Digital Services",
+    "email": "noreply@sf.gov"
+  },
   "scripts": {
     "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
     "lint": "eslint",
@@ -19,6 +23,7 @@
   },
   "devDependencies": {
     "@auto-it/conventional-commits": "^11.3.6",
+    "@auto-it/core": "^11.3.6",
     "@auto-it/npm": "^11.3.6",
     "@auto-it/omit-commits": "^11.3.6",
     "@eslint/js": "^9.39.1",
