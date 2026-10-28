@@ -5,39 +5,75 @@ SF.gov Fillout theme
 /************************************ 
 Alerts/Banners 
 ************************************/
-/* alert container */
-.fillout-field-alert .border-blue-400 {
-  border: 1px solid #0046c2;
-  border-radius: 0px;
-  background-color: #e5f1ff;
-  padding: 28px;
-}
+.fillout-field-alert {
+  /* Info alert container */
+  .border-blue-400 {
+    border: 1px solid #0046c2;
+    border-radius: 0px;
+    background-color: #e5f1ff;
+    padding: 28px;
+  }
+  /* Info alert icon */
+  .text-blue-400 {
+    color: #0046c2;
+  }
 
-/* alert inner container */
-.fillout-field-alert .flex.items-center .flex-col {
-  flex-direction: row;
-}
+  /* Warning alert container */
+  .border-yellow-400 {
+    border: 1px solid #843f00;
+    border-radius: 0px;
+    background-color: #faefe1;
+    padding: 28px;
+  }
+  /* Warning alert icon */
+  .text-yellow-400 {
+    color: #843f00;
+  }
 
-/* alert icon */
-.fillout-field-alert .text-blue-400 {
-  color: #0046c2;
-}
+  /* Critical alert container */
+  .border-red-400 {
+    border: 1px solid #ac0000;
+    border-radius: 0px;
+    background-color: #ffeae5;
+    padding: 28px;
+  }
+  /* Critical alert icon */
+  .text-red-400 {
+    color: #ac0000;
+  }
 
-/* alert icon placement */
-.fillout-field-alert .flex.items-center {
-  align-items: flex-start;
-}
+  /* Success alert container */
+  .border-green-400 {
+    border: 1px solid #026800;
+    border-radius: 0px;
+    background-color: #e8f5e2;
+    padding: 28px;
+  }
+  /* Success alert icon */
+  .text-green-400 {
+    color: #026800;
+  }
 
-/* alert title */
-.fillout-field-alert .ql-editor strong {
-  /*  color: #0046c2; */
-  /*  background-color: #e5f1ff; */
-}
+  /* alert inner container */
+  .flex.items-center .flex-col {
+    flex-direction: row;
+  }
 
-/* alert text */
-.fillout-field-alert .ql-editor p {
-  color: #0b0c0c;
-  background-color: inherit;
+  /* alert icon placement */
+  .flex.items-center {
+    align-items: flex-start;
+  }
+
+  .border-red-400 div.ql-editor p,
+  .border-blue-400 div.ql-editor p,
+  .border-yellow-400 div.ql-editor p,
+  .border-green-400 div.ql-editor p,
+  .border-red-400 div.ql-editor li,
+  .border-blue-400 div.ql-editor li,
+  .border-green-400 div.ql-editor li,
+  .border-yellow-400 div.ql-editor li {
+    color: #0b0c0c !important;
+  }
 }
 
 /************************************
@@ -383,7 +419,7 @@ input::placeholder {
 }
 
 a {
-  color: #2a60af;
+  color: #2a60af !important;
 }
 
 .fillout-required-asterisk,
