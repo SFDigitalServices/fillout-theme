@@ -1,3 +1,15 @@
+# v0.3.0 (Wed Oct 28 2026)
+
+#### 🚀 Enhancement
+
+- feat: Hide theme logo when embedded [FPSD-443] [#12](https://github.com/SFDigitalServices/fillout-theme/pull/12) ([@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 1
+
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v0.2.4 (Wed Oct 28 2026)
 
 #### 🐛 Bug Fix
