@@ -293,6 +293,11 @@ Spacing
   height: fit-content;
 }
 
+/** Hide the _parent_ of the theme logo when embedded */
+div:has(> .fillout-theme-logo) {
+  @apply embedded:hidden;
+}
+
 /************************************
 Switch
 ************************************/
