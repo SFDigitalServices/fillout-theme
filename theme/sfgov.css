@@ -164,7 +164,8 @@ Datepicker/Timepicker
 Dropdown/select
 ************************************/
 .fillout-field-dropdown,
-.fillout-field-multi-select {
+.fillout-field-multi-select,
+.fillout-field-address {
   .react-select__control {
     border: 1px solid #0b0c0c;
   }
@@ -242,12 +243,19 @@ Multiple choice
 }
 
 /************************************
+Phone
+************************************/
+.fillout-field-phone-number div.PhoneInput {
+  height: 56px;
+  border: 1px solid #0b0c0c;
+}
+
+/************************************
 Spacing
 ************************************/
 #question-alignment-container.h-full {
   height: fit-content;
 }
-
 
 /************************************
 Switch
