@@ -119,17 +119,21 @@ Buttons
 /************************************
 Checkboxes
 ************************************/
-.fillout-field-checkbox button,
-.fillout-field-checkbox button > svg,
-.fillout-field-checkboxes button,
-.fillout-field-checkboxes button > svg {
-  height: 40px;
-  width: 40px;
-}
+.fillout-field-checkbox,
+.fillout-field-checkboxes {
+  button {
+    border: 1px solid #0b0c0c;
+  }
 
-.fillout-field-checkbox button[aria-checked="true"],
-.fillout-field-checkboxes button[aria-checked="true"] {
-  background-color: #386ebf;
+  button,
+  button > svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  button[aria-checked="true"] {
+    background-color: #386ebf;
+  }
 }
 
 .fillout-field-checkboxes fieldset {
@@ -137,17 +141,43 @@ Checkboxes
 }
 
 /************************************
-Dropdown/select
+Datepicker/Timepicker
 ************************************/
-div.react-select__value-container,
-div.react-select__input-container {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin: 0 !important;
+.date-picker-wrapper,
+.fillout-field-date-time-picker .react-select__control,
+.fillout-field-time-picker .react-select__control {
+  border: 1px solid #0b0c0c;
+
+  .react-select__value-container,
+  .react-select__input-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+  }
+
+  .react-select__indicator {
+    color: #0b0c0c;
+  }
 }
 
-.react-select__indicator {
-  color: #0b0c0c;
+/************************************
+Dropdown/select
+************************************/
+.fillout-field-dropdown,
+.fillout-field-multi-select {
+  .react-select__control {
+    border: 1px solid #0b0c0c;
+  }
+  .react-select__value-container,
+  .react-select__input-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+  }
+
+  .react-select__indicator {
+    color: #0b0c0c;
+  }
 }
 
 /************************************
@@ -194,18 +224,21 @@ nav .group .step-name {
 /************************************
 Multiple choice
 ************************************/
-.fillout-field-multiple-choice [role="radio"] {
-  margin: 16px 16px 16px 12px;
-}
-.fillout-field-multiple-choice span.border-2 {
-  height: 40px !important;
-  width: 40px !important;
-}
+.fillout-field-multiple-choice {
+  [role="radio"] {
+    margin: 16px 16px 16px 12px;
+  }
+  span.border-2 {
+    height: 40px !important;
+    width: 40px !important;
+    border: 1px solid #0b0c0c;
+  }
 
-.fillout-field-multiple-choice span.transition-transform {
-  height: 22px !important;
-  width: 22px !important;
-  color: #386ebf !important;
+  span.transition-transform {
+    height: 22px !important;
+    width: 22px !important;
+    color: #386ebf !important;
+  }
 }
 
 /************************************
