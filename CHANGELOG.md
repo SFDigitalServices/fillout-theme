@@ -1,3 +1,16 @@
+# v0.2.4 (Wed Oct 28 2026)
+
+#### 🐛 Bug Fix
+
+- [FPSD-412] Style input borders and heights [#7](https://github.com/SFDigitalServices/fillout-theme/pull/7) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov) [@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 2
+
+- Jackie ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v0.2.3 (Wed Oct 28 2026)
 
 #### 🐛 Bug Fix
