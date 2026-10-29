@@ -294,6 +294,30 @@ Spacing
 }
 
 /************************************
+Submission review page
+************************************/
+/* Subheading */
+.fillout-field-text div.ql-editor > h5 > span {
+  color: #6e7070 !important;
+}
+
+.fillout-field-review {
+  /* Question */
+  dt {
+    color: #6e7070 !important;
+  }
+  /* Answered */
+  dd.text-gray-900 span {
+    color: #0b0c0c !important;
+  }
+  /* Unanswered */
+  dd.text-gray-900 span.italic {
+    color: #6e7070 !important;
+    font-style: italic;
+  }
+}
+
+/************************************
 Switch
 ************************************/
 .fillout-field-switch .ant-switch:focus {
@@ -413,9 +437,9 @@ p {
   color: #0b0c0c !important;
 }
 
-.fillout-caption,
+.fillout-caption p,
 input::placeholder {
-  color: #535454;
+  color: #535454 !important;
 }
 
 a {
@@ -425,14 +449,4 @@ a {
 .fillout-required-asterisk,
 p::after {
   color: #ac0000;
-}
-
-/* Submission review page */
-.fillout-field-review span.grow {
-  color: #0b0c0c !important;
-}
-
-.fillout-field-review span.grow.italic {
-  color: #6e7070 !important;
-  font-style: italic;
 }
