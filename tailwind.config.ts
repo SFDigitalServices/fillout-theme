@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
-import theme from './src/theme'
+import theme from './tailwind.theme'
 
 export default {
   /**
