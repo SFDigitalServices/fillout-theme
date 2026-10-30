@@ -10,8 +10,22 @@ dd, dl, dt {
 }
 
 h1,
-h2 { @apply font-slab text-desktop-heading-xxl; }
-h3 { @apply font-slab text-desktop-heading-xl; }
-h4 { @apply font-slab text-desktop-heading-lg; }
-h5 { @apply font-body text-desktop-heading-md; }
-h6 { @apply font-body text-desktop-heading-sm; }
+h2 {
+  @apply font-slab text-desktop-heading-xxl;
+}
+h3 {
+  @apply font-slab text-desktop-heading-xl;
+}
+h4 {
+  @apply font-slab text-desktop-heading-lg;
+}
+h5 {
+  @apply font-body text-desktop-heading-md;
+}
+h6 {
+  @apply font-body text-desktop-heading-sm;
+}
+
+.fillout-field-label p {
+  @apply text-label-md;
+}

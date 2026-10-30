@@ -3,6 +3,7 @@ SF.gov Fillout theme
 */
 @import url(./typography.css);
 
+/* this is the outermost part of the DOM where we need to set variables */
 #question-container {
   /* enables @apply font-slab; */
   --font-slab: "Roboto Slab", var(--font-serif);
@@ -163,10 +164,6 @@ Buttons
     justify-content: flex-start !important;
     margin: 0;
   }
-}
-
-.fillout-field-label p {
-  @apply text-label-md;
 }
 
 /************************************
