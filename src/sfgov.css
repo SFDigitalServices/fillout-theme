@@ -1,8 +1,12 @@
 /* 
 SF.gov Fillout theme
 */
-@import url(./variables.css);
 @import url(./typography.css);
+
+#question-container {
+  /* enables @apply font-slab; */
+  --font-slab: "Roboto Slab", var(--font-serif);
+}
 
 /************************************ 
 Alerts/Banners 
