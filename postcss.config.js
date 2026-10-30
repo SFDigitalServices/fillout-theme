@@ -29,7 +29,7 @@ const plugins = [
   // postcss-import only resolves @import at the top of a file, so run it first
   atImport({
     path: [
-      join(__dirname, 'theme')
+      join(__dirname, 'src')
     ]
   }),
   header({
