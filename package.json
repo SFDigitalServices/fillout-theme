@@ -6,10 +6,10 @@
     "url": "https://github.com/sfds-bot"
   },
   "scripts": {
-    "build": "postcss theme/sfgov.css -o dist/theme-sfgov.css",
+    "build": "postcss src/sfgov.css -o dist/theme-sfgov.css",
     "lint": "eslint",
     "prepublishOnly": "NODE_ENV=production npm run build",
-    "watch": "nodemon -w theme -w postcss.config.js -w tailwind.* -e css,js,ts --exec 'npm run build'"
+    "watch": "nodemon -w src -w postcss.* -w tailwind.* -w package.json -e css,js,ts --exec 'npm run build'"
   },
   "license": "MIT",
   "type": "commonjs",

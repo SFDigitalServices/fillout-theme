@@ -1,6 +1,8 @@
 /* 
 SF.gov Fillout theme
 */
+@import url(./variables.css);
+@import url(./typography.css);
 
 /************************************ 
 Alerts/Banners 
@@ -8,50 +10,58 @@ Alerts/Banners
 .fillout-field-alert {
   /* Info alert container */
   .border-blue-400 {
-    border: 1px solid #0046c2;
+    /* border: 1px solid #0046c2;
     border-radius: 0px;
     background-color: #e5f1ff;
-    padding: 28px;
+    padding: 28px; */
+    @apply border-1 border-information600 rounded-0 bg-information50 p-[28px];
   }
   /* Info alert icon */
   .text-blue-400 {
-    color: #0046c2;
+    /* color: #0046c2; */
+    @apply text-information600;
   }
 
   /* Warning alert container */
   .border-yellow-400 {
-    border: 1px solid #843f00;
+    /* border: 1px solid #843f00;
     border-radius: 0px;
     background-color: #faefe1;
-    padding: 28px;
+    padding: 28px; */
+    @apply border-1 border-warning600 rounded-0 bg-warning50 p-[28px];
   }
   /* Warning alert icon */
   .text-yellow-400 {
-    color: #843f00;
+    /* color: #843f00; */
+    @apply text-warning600;
   }
 
   /* Critical alert container */
   .border-red-400 {
-    border: 1px solid #ac0000;
+    /* border: 1px solid #ac0000;
     border-radius: 0px;
     background-color: #ffeae5;
-    padding: 28px;
+    padding: 28px; */
+    @apply border-1 border-danger600 rounded-0 bg-danger50 p-[28px];
   }
   /* Critical alert icon */
   .text-red-400 {
-    color: #ac0000;
+    /* color: #ac0000; */
+    @apply text-danger600;
   }
 
   /* Success alert container */
   .border-green-400 {
-    border: 1px solid #026800;
+    /* border: 1px solid #026800;
     border-radius: 0px;
     background-color: #e8f5e2;
-    padding: 28px;
+    padding: 28px; */
+    @apply border-1 border-success600 rounded-0 bg-success50 p-[28px];
   }
   /* Success alert icon */
   .text-green-400 {
-    color: #026800;
+    /* color: #026800; */
+    @apply text-success600;
   }
 
   /* alert inner container */
@@ -72,7 +82,8 @@ Alerts/Banners
   .border-blue-400 div.ql-editor li,
   .border-green-400 div.ql-editor li,
   .border-yellow-400 div.ql-editor li {
-    color: #0b0c0c !important;
+    /* color: #0b0c0c !important; */
+    @apply !text-black;
   }
 }
 
@@ -82,50 +93,48 @@ Buttons
 
 .fillout-field-button div {
   text-align: center;
-  font-family: "Roboto Flex", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
 }
 
 /* next/primary button */
 .fillout-field-button button {
-  height: 40px;
+  /* height: 40px;
   padding: 15px 16px;
   border-radius: 4px;
   border: 1px solid #1b519e;
   background-color: #1b519e;
   box-shadow: none;
-  color: #fcfcfc;
-
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  color: #fcfcfc; */
+  @apply h-40 p-16 py-[15px] rounded-4 border-1 border-primary600 bg-primary600 text-white shadow-none;
 }
 
 .fillout-field-button button:hover {
-  border-color: #001d4e;
-  background-color: #001d4e;
+  /* border-color: #001d4e;
+  background-color: #001d4e; */
+  @apply bg-primary800 border-primary800;
 }
 
 .fillout-field-button button:focus {
-  outline: 3px solid #2a60af;
-  box-shadow: none;
+  /* outline: 3px solid #2a60af;
+  box-shadow: none; */
+  @apply outline outline-[3px] outline-primary500 shadow-none;
 }
 
 /* back/secondary button */
 .fillout-back-button button {
-  border-radius: 4px;
+  /* border-radius: 4px;
   border: 1px solid #dfebfd;
   background-color: #dfebfd;
   color: #000925;
-  white-space: nowrap;
+  white-space: nowrap; */
+  @apply rounded-4 border-1 border-primary100 bg-primary100 text-primary900 whitespace-nowrap;
 }
+
 .fillout-back-button button:hover {
-  border: 1px solid #afccf7;
-  background-color: #afccf7;
+  /* border: 1px solid #afccf7;
+  background-color: #afccf7; */
+  @apply border-1 border-primary200 bg-primary200;
 }
+
 @media (max-width: 768px) {
   .fillout-back-button button span div div::before {
     content: "← ";
@@ -152,28 +161,36 @@ Buttons
   }
 }
 
+.fillout-field-label p {
+  @apply text-label-md;
+}
+
 /************************************
 Checkboxes
 ************************************/
 .fillout-field-checkbox,
 .fillout-field-checkboxes {
   button {
-    border: 1px solid #0b0c0c;
+    /* border: 1px solid #0b0c0c; */
+    @apply border-1 border-black;
   }
 
   button,
   button > svg {
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
+    @apply size-40;
   }
 
   button[aria-checked="true"] {
-    background-color: #386ebf;
+    /* background-color: #386ebf; */
+    @apply bg-primary500;
   }
-}
 
-.fillout-field-checkboxes fieldset {
-  gap: 16px;
+  fieldset {
+    /* gap: 16px; */
+    @apply gap-16;
+  }
 }
 
 /************************************
@@ -182,17 +199,20 @@ Datepicker/Timepicker
 .date-picker-wrapper,
 .fillout-field-date-time-picker .react-select__control,
 .fillout-field-time-picker .react-select__control {
-  border: 1px solid #0b0c0c;
+  /* border: 1px solid #0b0c0c; */
+  @apply border-1 border-black;
 
   .react-select__value-container,
   .react-select__input-container {
-    padding-top: 0 !important;
+    /* padding-top: 0 !important;
     padding-bottom: 0 !important;
-    margin: 0 !important;
+    margin: 0 !important; */
+    @apply !py-0 !m-0;
   }
 
   .react-select__indicator {
-    color: #0b0c0c;
+    /* color: #0b0c0c; */
+    @apply text-black;
   }
 }
 
@@ -203,17 +223,21 @@ Dropdown/select
 .fillout-field-multi-select,
 .fillout-field-address {
   .react-select__control {
-    border: 1px solid #0b0c0c;
+    /* border: 1px solid #0b0c0c; */
+    @apply border-1 border-black;
   }
+
   .react-select__value-container,
   .react-select__input-container {
-    padding-top: 0 !important;
+    /* padding-top: 0 !important;
     padding-bottom: 0 !important;
-    margin: 0 !important;
+    margin: 0 !important; */
+    @apply !py-0 !m-0;
   }
 
   .react-select__indicator {
-    color: #0b0c0c;
+    /* color: #0b0c0c; */
+    @apply text-black;
   }
 }
 
@@ -221,17 +245,16 @@ Dropdown/select
 Error messages
 ************************************/
 .fillout-error-validation-message {
-  color: #ac0000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  /* color: #ac0000; */
+  @apply text-danger600;
 }
 
 /************************************
 File upload
 ************************************/
 .fillout-field-file-upload div.filepond--drop-label > label > div {
-  color: #535454 !important;
+  /* color: #535454 !important; */
+  @apply !text-neutral600;
 }
 
 /************************************
@@ -248,14 +271,16 @@ textarea {
 
 input.border-gray-300,
 textarea.border-gray-300 {
-  border: 1px solid #0b0c0c;
+  /* border: 1px solid #0b0c0c; */
+  @apply border-1 border-black;
 }
 
 /************************************
 Navigation/progress bar
 ************************************/
 nav .group .step-name {
-  color: #0b0c0c !important;
+  /* color: #0b0c0c !important; */
+  @apply !text-black;
 }
 
 /************************************
@@ -263,18 +288,22 @@ Multiple choice
 ************************************/
 .fillout-field-multiple-choice {
   [role="radio"] {
-    margin: 16px 16px 16px 12px;
+    /* margin: 16px 16px 16px 12px; */
+    @apply m-16 mr-12;
   }
+
   span.border-2 {
-    height: 40px !important;
+    /* height: 40px !important;
     width: 40px !important;
-    border: 1px solid #0b0c0c;
+    border: 1px solid #0b0c0c; */
+    @apply !size-40 border-1 border-black;
   }
 
   span.transition-transform {
-    height: 22px !important;
+    /* height: 22px !important;
     width: 22px !important;
-    color: #386ebf !important;
+    color: #386ebf !important; */
+    @apply !size-[22px] !text-primary500;
   }
 }
 
@@ -282,8 +311,9 @@ Multiple choice
 Phone
 ************************************/
 .fillout-field-phone-number div.PhoneInput {
-  height: 56px;
-  border: 1px solid #0b0c0c;
+  /* height: 56px;
+  border: 1px solid #0b0c0c; */
+  @apply h-[56px] border-1 border-black;
 }
 
 /************************************
@@ -302,110 +332,15 @@ div:has(> .fillout-theme-logo) {
 Switch
 ************************************/
 .fillout-field-switch .ant-switch:focus {
+  /* transition: none;
   outline: 3px solid #2a60af;
-  outline-offset: 4px;
-  transition: none;
+  outline-offset: 4px; */
+  @apply outline outline-[3px] outline-primary500 outline-offset-4 transition-none;
 }
 
 /************************************
 Text
 ************************************/
-
-.fillout-field-text h1 {
-  font-family: "Roboto Slab", sans-serif;
-  font-style: normal;
-  color: #0b0c0c;
-  padding-bottom: 20px;
-  font-weight: 600;
-  font-size: 46px;
-  line-height: 56px;
-}
-
-.fillout-field-text h2 {
-  font-family: "Roboto Slab", sans-serif;
-  font-style: normal;
-  color: #0b0c0c;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-.fillout-field-text h3 {
-  font-family: "Roboto Slab", sans-serif;
-  font-style: normal;
-  color: #0b0c0c;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.fillout-field-text h4 {
-  font-family: "Roboto Slab", sans-serif;
-  font-style: normal;
-  color: #0b0c0c;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.fillout-field-text h5 {
-  font-family: "Roboto Slab", sans-serif;
-  font-style: normal;
-  color: #0b0c0c;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-div,
-span,
-p {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-}
-
-.fillout-field-paragraph h1 {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.fillout-field-paragraph h2 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-
-.fillout-field-paragraph h3 {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-}
-
-.fillout-field-paragraph h4 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /*  text-transform: uppercase; */
-}
-
-.fillout-field-paragraph h5 {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.fillout-field-paragraph p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.fillout-field-label p {
-  color: #0b0c0c;
-  font-size: 20px;
-  line-height: 28px;
-}
 
 .fillout-field-container input[type],
 .fillout-field-container input[placeholder],
@@ -415,29 +350,35 @@ p {
 .fillout-field-multiple-choice [role="radio"] div,
 .fillout-field-checkboxes label div,
 .react-select__value-container .react-select__single-value {
-  color: #0b0c0c !important;
+  /* color: #0b0c0c !important; */
+  @apply !text-black;
 }
 
 .fillout-caption,
 input::placeholder {
-  color: #535454;
+  /* color: #535454; */
+  @apply text-neutral600;
 }
 
 a {
-  color: #2a60af !important;
+  /* color: #2a60af !important; */
+  @apply !text-primary500;
 }
 
 .fillout-required-asterisk,
 p::after {
-  color: #ac0000;
+  /* color: #ac0000; */
+  @apply text-danger600;
 }
 
 /* Submission review page */
 .fillout-field-review span.grow {
-  color: #0b0c0c !important;
+  /* color: #0b0c0c !important; */
+  @apply !text-black;
 }
 
 .fillout-field-review span.grow.italic {
-  color: #6e7070 !important;
-  font-style: italic;
+  /* font-style: italic;
+  color: #6e7070 !important; */
+  @apply !text-neutral500;
 }
