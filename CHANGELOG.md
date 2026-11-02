@@ -1,3 +1,15 @@
+# v1.0.0 (Mon Nov 02 2026)
+
+#### 💥 Breaking Change
+
+- BREAKING: tokens, typography! [#13](https://github.com/SFDigitalServices/fillout-theme/pull/13) ([@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 1
+
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v0.3.0 (Wed Oct 28 2026)
 
 #### 🚀 Enhancement
