@@ -4,7 +4,7 @@ This repo contains code and documentation for managing our [Fillout theme].
 
 ## Build
 
-The stylesheet in the [theme directory](./theme/) is built for production with
+The stylesheet in the [src directory](./src/) is built for production with
 [postcss] and [Tailwind][] (the same tools used to build SF.gov's stylesheets
 and React components). This helps us write less CSS (e.g. with nested selectors)
 and more precisely override Fillout's own CSS, which is also built with

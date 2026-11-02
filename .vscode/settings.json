@@ -7,7 +7,7 @@
     "source.fixAll.eslint": "explicit"
   },
   "files.associations": {
-    "*.css": "postcss"
+    "*.css": "tailwindcss"
   },
   "tailwindCSS.includeLanguages": {
     "postcss": "css"
