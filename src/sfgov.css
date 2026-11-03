@@ -306,3 +306,9 @@ p::after {
 .fillout-field-review span.grow.italic {
   @apply !text-neutral500;
 }
+
+/* Thank you page */
+/* Heading should be styled like h2 */
+.fillout-field-thank-you p {
+  @apply font-slab text-desktop-heading-xxl;
+}
