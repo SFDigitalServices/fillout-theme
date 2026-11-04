@@ -133,8 +133,9 @@ Checkboxes
 .fillout-field-checkbox,
 .fillout-field-checkboxes {
   button {
-    @apply border-1 border-black;
+    @apply border-1 border-black focus:ring-offset-4 focus:!outline-none focus-visible:ring-offset-4 focus-visible:!outline-none;
   }
+
 
   button,
   button > svg {
@@ -142,7 +143,7 @@ Checkboxes
   }
 
   button[aria-checked="true"] {
-    @apply bg-primary500;
+    @apply bg-primary500 border-primary500;
   }
 
   fieldset {
