@@ -133,8 +133,9 @@ Checkboxes
 .fillout-field-checkbox,
 .fillout-field-checkboxes {
   button {
-    @apply border-1 border-black;
+    @apply border-1 border-black focus:ring-offset-4 focus:!outline-none focus-visible:ring-offset-4 focus-visible:!outline-none;
   }
+
 
   button,
   button > svg {
@@ -142,7 +143,7 @@ Checkboxes
   }
 
   button[aria-checked="true"] {
-    @apply bg-primary500;
+    @apply bg-primary500 border-primary500;
   }
 
   fieldset {
@@ -163,7 +164,7 @@ Datepicker/Timepicker
     @apply !py-0 !m-0;
   }
 
-  .react-select__indicator {
+  .react-select__indicator, svg {
     @apply text-black;
   }
 }
@@ -230,18 +231,24 @@ nav .group .step-name {
 Multiple choice
 ************************************/
 .fillout-field-multiple-choice {
+  label {
+    @apply inline-block text-body;
+  }
   [role="radio"] {
-    @apply m-16 mr-12;
+    @apply my-16 ml-12 mr-16;
+  }
+  [role="radio"]:focus-within span.radio-outer-circle {
+    @apply !outline !outline-[3px] !outline-primary500 !outline-offset-4;
   }
 
-  span.border-2 {
-    @apply !size-40 border-1 border-black;
+  span.radio-outer-circle {
+    @apply !size-40 border-1 border-black !shadow-none;
   }
-
-  span.transition-transform {
+  span.radio-inner-circle {
     @apply !size-[22px] !text-primary500;
   }
 }
+
 
 /************************************
 Phone
@@ -260,6 +267,29 @@ Spacing
 /** Hide the _parent_ of the theme logo when embedded */
 div:has(> .fillout-theme-logo) {
   @apply embedded:hidden;
+}
+
+/************************************
+Submission review page
+************************************/
+/* Subheading */
+.fillout-field-text div.ql-editor > h5 > span {
+  @apply !text-neutral500;
+}
+
+.fillout-field-review {
+  /* Question */
+  dt {
+    @apply !text-neutral500;
+  }
+  /* Answered */
+  dd.text-gray-900 span {
+    @apply !text-black;
+  }
+  /* Unanswered */
+  dd.text-gray-900 span.italic {
+    @apply !text-neutral500;
+  }
 }
 
 /************************************
@@ -284,7 +314,7 @@ Text
   @apply !text-black;
 }
 
-.fillout-caption,
+.fillout-caption p,
 input::placeholder {
   @apply text-neutral600;
 }
