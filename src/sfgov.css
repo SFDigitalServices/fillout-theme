@@ -24,11 +24,7 @@ Alerts/Banners
 
   /* Warning alert container */
   .border-yellow-400 {
-    @apply border-1 border-warning600 rounded-0 bg-warning50 p-[28px];
-  }
-  /* Warning alert icon */
-  .text-yellow-400 {
-    @apply text-warning600;
+    @apply border-1  rounded-0  p-[28px];
   }
 
   /* Critical alert container */
