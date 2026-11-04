@@ -231,18 +231,24 @@ nav .group .step-name {
 Multiple choice
 ************************************/
 .fillout-field-multiple-choice {
+  label {
+    @apply inline-block;
+  }
   [role="radio"] {
-    @apply m-16 mr-12;
+    @apply my-16 ml-12 mr-16;
+  }
+  [role="radio"]:focus-within span.radio-outer-circle {
+    @apply !outline !outline-[3px] !outline-primary500 !outline-offset-4;
   }
 
-  span.border-2 {
-    @apply !size-40 border-1 border-black;
+  span.radio-outer-circle {
+    @apply !size-40 border-1 border-black !shadow-none;
   }
-
-  span.transition-transform {
+  span.radio-inner-circle {
     @apply !size-[22px] !text-primary500;
   }
 }
+
 
 /************************************
 Phone
