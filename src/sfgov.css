@@ -232,7 +232,7 @@ Multiple choice
 ************************************/
 .fillout-field-multiple-choice {
   label {
-    @apply inline-block;
+    @apply inline-block text-body;
   }
   [role="radio"] {
     @apply my-16 ml-12 mr-16;
