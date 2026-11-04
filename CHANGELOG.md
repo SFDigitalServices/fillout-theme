@@ -1,3 +1,15 @@
+# v1.0.1 (Wed Nov 04 2026)
+
+#### 🐛 Bug Fix
+
+- Style thank you page heading as an h2 [#14](https://github.com/SFDigitalServices/fillout-theme/pull/14) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+
+#### Authors: 1
+
+- Jackie ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+
+---
+
 # v1.0.0 (Mon Nov 02 2026)
 
 #### 💥 Breaking Change
