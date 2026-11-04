@@ -164,7 +164,7 @@ Datepicker/Timepicker
     @apply !py-0 !m-0;
   }
 
-  .react-select__indicator {
+  .react-select__indicator, svg {
     @apply text-black;
   }
 }
@@ -264,6 +264,29 @@ div:has(> .fillout-theme-logo) {
 }
 
 /************************************
+Submission review page
+************************************/
+/* Subheading */
+.fillout-field-text div.ql-editor > h5 > span {
+  @apply !text-neutral500;
+}
+
+.fillout-field-review {
+  /* Question */
+  dt {
+    @apply !text-neutral500;
+  }
+  /* Answered */
+  dd.text-gray-900 span {
+    @apply !text-black;
+  }
+  /* Unanswered */
+  dd.text-gray-900 span.italic {
+    @apply !text-neutral500;
+  }
+}
+
+/************************************
 Switch
 ************************************/
 .fillout-field-switch .ant-switch:focus {
@@ -285,7 +308,7 @@ Text
   @apply !text-black;
 }
 
-.fillout-caption,
+.fillout-caption p,
 input::placeholder {
   @apply text-neutral600;
 }
