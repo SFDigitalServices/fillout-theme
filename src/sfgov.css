@@ -251,6 +251,23 @@ Phone
 }
 
 /************************************
+Record picker
+************************************/
+.fillout-field-record-picker {
+  div.border {
+    @apply h-[56px];
+  }
+
+  .border {
+    @apply border-1 border-black shadow-none;
+  }
+
+  div, svg {
+    @apply text-black;
+  }
+}
+
+/************************************
 Spacing
 ************************************/
 #question-alignment-container.h-full {
