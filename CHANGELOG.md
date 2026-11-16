@@ -1,3 +1,17 @@
+# v1.0.2 (Mon Nov 16 2026)
+
+#### 🐛 Bug Fix
+
+- [FPSD-458] Record picker text and border styles [#17](https://github.com/SFDigitalServices/fillout-theme/pull/17) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+- [FPSD-456] Revert warning banner colors to default [#16](https://github.com/SFDigitalServices/fillout-theme/pull/16) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov) [@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 2
+
+- Jackie ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v1.0.1 (Wed Nov 04 2026)
 
 #### 🐛 Bug Fix
