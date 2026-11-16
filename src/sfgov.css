@@ -230,9 +230,15 @@ nav .group .step-name {
 /************************************
 Multiple choice
 ************************************/
+
 .fillout-field-multiple-choice {
   label {
     @apply inline-block text-body;
+  }
+  /* normalize margins on checkbox and radio labels */
+  .ml-2,
+  .ml-3 {
+    @apply ml-12;
   }
   [role="radio"] {
     @apply my-16 ml-12 mr-16;
