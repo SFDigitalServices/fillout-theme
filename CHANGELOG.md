@@ -1,3 +1,15 @@
+# v1.0.3 (Mon Nov 16 2026)
+
+#### 🐛 Bug Fix
+
+- [FPSD-332] Color contrast & focus state fixes, [FPSD-457] Multiple choice text alignment [#15](https://github.com/SFDigitalServices/fillout-theme/pull/15) ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+
+#### Authors: 1
+
+- Jackie ([@jackieyoungsfgov](https://github.com/jackieyoungsfgov))
+
+---
+
 # v1.0.2 (Mon Nov 16 2026)
 
 #### 🐛 Bug Fix
