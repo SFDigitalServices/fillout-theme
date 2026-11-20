@@ -13,12 +13,13 @@ export default {
     plugin(({ addVariant }) => {
       /**
        * Use `embedded:<class>` to apply styles to an element *only* when it's
-       * displayed in an embedded iframe. The `div:has(...) &` hack allows us to
-       * target elements outside of #question-alignment-container.
+       * displayed in an embedded iframe. Fillout adds `overflow-y-hidden` to
+       * #form-step-widgets-container (the ancestor of the nav bar and questions)
+       * when `fillout-embed-dynamic-resize=true` is in the URL.
        *
        * ⚠️ This is fragile, but it's the only hook we have for now!
        */
-      addVariant('embedded', 'div:has(#question-alignment-container.justify-start) &')
+      addVariant('embedded', '#form-step-widgets-container.overflow-y-hidden &')
     })
   ]
 } satisfies Config
