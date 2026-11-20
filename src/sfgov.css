@@ -132,7 +132,6 @@ Checkboxes
     @apply border-1 border-black focus:ring-offset-4 focus:!outline-none focus-visible:ring-offset-4 focus-visible:!outline-none;
   }
 
-
   button,
   button > svg {
     @apply size-40;
@@ -160,7 +159,8 @@ Datepicker/Timepicker
     @apply !py-0 !m-0;
   }
 
-  .react-select__indicator, svg {
+  .react-select__indicator,
+  svg {
     @apply text-black;
   }
 }
@@ -251,7 +251,6 @@ Multiple choice
   }
 }
 
-
 /************************************
 Phone
 ************************************/
@@ -271,7 +270,8 @@ Record picker
     @apply border-1 border-black shadow-none;
   }
 
-  div, svg {
+  div,
+  svg {
     @apply text-black;
   }
 }
