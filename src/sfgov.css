@@ -288,6 +288,14 @@ div:has(> .fillout-theme-logo) {
   @apply embedded:hidden;
 }
 
+/** Hide the language menu when embedded */
+#question-alignment-container
+  > div
+  > div
+  > :first-child:has(.react-select__control) {
+  @apply embedded:hidden;
+}
+
 /************************************
 Submission review page
 ************************************/
