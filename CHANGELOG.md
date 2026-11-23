@@ -1,3 +1,15 @@
+# v1.1.0 (Mon Nov 23 2026)
+
+#### 🚀 Enhancement
+
+- feat: Hide language menu, fix sticky nav bar padding [#19](https://github.com/SFDigitalServices/fillout-theme/pull/19) ([@shawnbot](https://github.com/shawnbot))
+
+#### Authors: 1
+
+- Shawn Allen ([@shawnbot](https://github.com/shawnbot))
+
+---
+
 # v1.0.3 (Mon Nov 16 2026)
 
 #### 🐛 Bug Fix
