@@ -152,7 +152,7 @@ Datepicker/Timepicker
 .date-picker-wrapper,
 .fillout-field-date-time-picker .react-select__control,
 .fillout-field-time-picker .react-select__control {
-  @apply border-1 border-black;
+  @apply border-1 border-black !h-[56px];
 
   .react-select__value-container,
   .react-select__input-container {
@@ -172,7 +172,7 @@ Dropdown/select
 .fillout-field-multi-select,
 .fillout-field-address {
   .react-select__control {
-    @apply border-1 border-black;
+    @apply border-1 border-black !h-[56px];
   }
 
   .react-select__value-container,
