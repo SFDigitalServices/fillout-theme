@@ -132,7 +132,6 @@ Checkboxes
     @apply border-1 border-black focus:ring-offset-4 focus:!outline-none focus-visible:ring-offset-4 focus-visible:!outline-none;
   }
 
-
   button,
   button > svg {
     @apply size-40;
@@ -160,7 +159,8 @@ Datepicker/Timepicker
     @apply !py-0 !m-0;
   }
 
-  .react-select__indicator, svg {
+  .react-select__indicator,
+  svg {
     @apply text-black;
   }
 }
@@ -219,8 +219,34 @@ textarea.border-gray-300 {
 /************************************
 Navigation/progress bar
 ************************************/
-nav .group .step-name {
-  @apply !text-black;
+#nav-bar {
+  @apply py-16 mt-20 border-[transparent];
+
+  /* Cancel out the h-* class that sets a height on the logo container, even
+   when it's empty. */
+  > .justify-end {
+    @apply h-auto;
+  }
+
+  nav {
+    /* set margins on #nav-bar instead */
+    @apply mb-0;
+
+    .group .step-name {
+      @apply !text-black !max-w-[auto] !ml-0 pl-8 md:pl-12;
+    }
+
+    /* horizontal lines between steps */
+    ol > div {
+      @apply mx-8 md:mx-12;
+
+      /* hide the one that renders before a step, which throws off horizontal
+      centering */
+      &:first-child {
+        @apply hidden;
+      }
+    }
+  }
 }
 
 /************************************
@@ -251,7 +277,6 @@ Multiple choice
   }
 }
 
-
 /************************************
 Phone
 ************************************/
@@ -271,7 +296,8 @@ Record picker
     @apply border-1 border-black shadow-none;
   }
 
-  div, svg {
+  div,
+  svg {
     @apply text-black;
   }
 }
@@ -285,6 +311,14 @@ Spacing
 
 /** Hide the _parent_ of the theme logo when embedded */
 div:has(> .fillout-theme-logo) {
+  @apply embedded:hidden;
+}
+
+/** Hide the language menu when embedded */
+#question-alignment-container
+  > div
+  > div
+  > :first-child:has(.react-select__control) {
   @apply embedded:hidden;
 }
 
