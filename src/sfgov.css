@@ -222,10 +222,8 @@ Navigation/progress bar
 #nav-bar {
   @apply py-16 mt-20 border-[transparent];
 
-  /**
-   * Cancel out the h-* class that sets a height on the logo container, even
-   * when it's empty.
-   */
+  /* Cancel out the h-* class that sets a height on the logo container, even
+   when it's empty. */
   > .justify-end {
     @apply h-auto;
   }
@@ -235,11 +233,18 @@ Navigation/progress bar
     @apply mb-0;
 
     .group .step-name {
-      @apply !text-black !max-w-[none] !ml-0 pl-8 md:pl-12;
+      @apply !text-black !max-w-[auto] !ml-0 pl-8 md:pl-12;
     }
 
+    /* horizontal lines between steps */
     ol > div {
       @apply mx-8 md:mx-12;
+
+      /* hide the one that renders before a step, which throws off horizontal
+      centering */
+      &:first-child {
+        @apply hidden;
+      }
     }
   }
 }
