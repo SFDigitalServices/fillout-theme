@@ -220,18 +220,27 @@ textarea.border-gray-300 {
 Navigation/progress bar
 ************************************/
 #nav-bar {
-  @apply pb-0;
-}
+  @apply py-16 mt-20 border-[transparent];
 
-nav {
-  @apply mb-0;
-
-  .group .step-name {
-    @apply !text-black !max-w-[100%] !ml-0 pl-8 md:pl-12;
+  /**
+   * Cancel out the h-* class that sets a height on the logo container, even
+   * when it's empty.
+   */
+  > .justify-end {
+    @apply h-auto;
   }
 
-  ol > div {
-    @apply mx-8 md:mx-12;
+  nav {
+    /* set margins on #nav-bar instead */
+    @apply mb-0;
+
+    .group .step-name {
+      @apply !text-black !max-w-[none] !ml-0 pl-8 md:pl-12;
+    }
+
+    ol > div {
+      @apply mx-8 md:mx-12;
+    }
   }
 }
 
