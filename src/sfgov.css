@@ -219,18 +219,19 @@ textarea.border-gray-300 {
 /************************************
 Navigation/progress bar
 ************************************/
+#nav-bar {
+  @apply pb-0;
+}
+
 nav {
-  &.border-b,
-  .border-b {
-    /**
-    * Hiding the logo shrinks the nav bar, which looks awkward with a bottom
-    * border. Add some breating room with padding.
-    */
-    @apply pt-12 pb-16;
-  }
+  @apply mb-0;
 
   .group .step-name {
-    @apply !text-black !ml-8 mr-12 !max-w-[100%];
+    @apply !text-black !max-w-[100%] !ml-0 pl-8 md:pl-12;
+  }
+
+  ol > div {
+    @apply mx-8 md:mx-12;
   }
 }
 
