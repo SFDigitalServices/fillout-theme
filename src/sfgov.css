@@ -230,7 +230,7 @@ nav {
   }
 
   .group .step-name {
-    @apply !text-black;
+    @apply !text-black !ml-8 mr-12 !max-w-[100%];
   }
 }
 
